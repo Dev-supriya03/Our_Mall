@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="overflow-x-hidden m-0 p-0">
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <title>Navbar</title>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="w-full h-20 flex items-center justify-between px-6 sticky top-0 z-50 bg-black/70 backdrop-blur-md">
+
+    <!-- Logo -->
+    <h1 class="text-3xl text-white font-extrabold">OUR MALL</h1>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-8 text-white font-semibold">
+        <a href="#home" class="hover:text-teal-400">HOME</a>
+        <a href="#about" class="hover:text-teal-400">ABOUT</a>
+        <a href="#stores" class="hover:text-teal-400">STORES</a>
+        <a href="#services" class="hover:text-teal-400">SERVICES</a>
+        <a href="#offers" class="hover:text-teal-400">OFFERS</a>
+        <a href="#guided" class="hover:text-teal-400">GUIDED</a>
+        <a href="#contact" class="hover:text-teal-400">CONTACT</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-white text-3xl" onclick="toggleMenu()">
+        <i class="ri-menu-line"></i>
+    </button>
+
+    <!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden fixed top-20 left-0 w-full bg-white text-black px-6 py-6 space-y-4 z-40 transition-all duration-300">
+
+    <a href="#home" class="block hover:text-teal-500">Home</a>
+    <a href="#about" class="block hover:text-teal-500">About</a>
+    <a href="#stores" class="block hover:text-teal-500">Stores</a>
+    <a href="#services" class="block hover:text-teal-500">Services</a>
+    <a href="#offers" class="block hover:text-teal-500">Offers</a>
+    <a href="#guided" class="block hover:text-teal-500">Guided</a>
+    <a href="#contact" class="block hover:text-teal-500">Contact</a>
+
+</div>
+
+</nav>
+
+
+    <header id="home" class="w-full h-140 bg-[url(https://marketsearchindia.wordpress.com/wp-content/uploads/2014/09/large-shopping-mall-3d-view-wallpaper.jpg)]  bg-cover">
+        <div class="text-justify  p-5">
+
+            <h1 class="text-yellow-800 text-2xl text-center">Best Shopping Mall</h1>
+            <p class="text-6xl font-extrabold text-white text-center">Welcome to our mall</p>
+            <p class="text-xl text-white text-center py-2">Discover our diverse offers and events.your perfect shopping experience awaits you!</p>
+
+            <div class=" flex justify-center  py-2">
+                <a href="#contact" class="px-8 py-3 bg-white text-yellow-800 rounded-lg hover:bg-gray-300">Contact Me</a>
+                <a href="#know more" class="px-8 py-3 bg-white text-yellow-800 rounded-lg ml-3 hover:bg-gray-300">Know More</a>
+            </div>
+
+        </div>
+    </header>
+
+   
+    <!-- About -->
+    <section id="about" class="w-full bg-gray-900 py-12 px-5 md:flex md:items-center md:gap-10 md:px-20 md:py-30">
+    <div class="md:w-1/2 ">
+        <img src="https://images.unsplash.com/photo-1667900773238-46cfad8a1318?q=80&w=416&auto=format&fit=crop"
+            alt="Mall Image"
+            class="w-full h-[300px] md:h-[400px] object-cover rounded-xl shadow-lg">
+    </div>
+
+    <div class="md:w-1/2 text-center md:text-left py-8">
+        <h1 class="text-4xl md:text-5xl font-extrabold font-serif mb-5 text-white">
+            ABOUT
+        </h1>
+
+        <p class="text-white leading-relaxed">
+            Welcome to Our Mall, your ultimate destination for shopping, entertainment, and dining.
+            Designed to offer a modern and comfortable experience, our mall brings together top brands,
+            exciting attractions, and a vibrant atmosphere under one roof.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <button class="px-6 py-3 bg-white text-yellow-700 rounded-lg hover:bg-yellow-100 transition">
+                Explore More
+            </button>
+            <button class="px-6 py-3 bg-white text-yellow-700 rounded-lg hover:bg-yellow-100 transition">
+                Know More
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Stores -->
+ 
+    <section id="stores" class="w-full bg-gray-900 py-12">
+
+    <div class="text-center mb-10">
+        <h1 class="text-4xl md:text-5xl text-white font-serif font-bold">
+            OUR STORES
+        </h1>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid  md:grid-cols-3  gap-8 px-6 md:px-20">
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Fashion Store</h2>
+            <p class="text-gray-300">Latest trends & stylish outfits</p>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Electronics</h2>
+            <p class="text-gray-300">Smart gadgets & devices</p>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Food Court</h2>
+            <p class="text-gray-300">Delicious food & drinks</p>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Kids Zone</h2>
+            <p class="text-gray-300">Fun games & activities</p>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Kids Zone</h2>
+            <p class="text-gray-300">Fun games & activities</p>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Kids Zone</h2>
+            <p class="text-gray-300">Fun games & activities</p>
+        </div>
+</div>
+
+</section>
+
+<!-- Services -->
+<section id="services" class="w-full bg-gray-900 py-17">
+    <div class="text-center">
+        <h1 class="text-5xl font-extrabold text-white font-serif py-5">Our Services</h1>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 px-6 md:px-20 py-10">
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Free WiFi</h2>
+            <p class="text-gray-300">Stay connected anytime</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Parking</h2>
+            <p class="text-gray-300">Safe & secure parking area</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Customer Support</h2>
+            <p class="text-gray-300">24/7 help desk available</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Kids Zone</h2>
+            <p class="text-gray-300">Fun games & activities</p>
+        </div>
+    </div>
+</section>
+
+<!-- Offer -->
+ <section id="offers" class="w-full bg-gray-900">
+   <div class="text-center">
+    <h1 class="text-5xl text-white font-serif py-6">Latest Offer</h1>
+   </div>
+
+   <div class="grid md:grid-cols-2 gap-8 px-6 md:px-20 py-10">
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">50% OFF Fashion</h2>
+            <p class="text-gray-300">Get exciting discounts on top brands</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Buy 1 Get 1 Free</h2>
+            <p class="text-gray-300">Special deals on selected items</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Food Festival</h2>
+            <p class="text-gray-300">Enjoy delicious food at discounted prices</p>
+        </div>
+    
+   </div>
+ </section>
+
+ <!-- Guided -->
+ <section id="guided" class="w-full bg-gray-900">
+    <div class="text-center py-8">
+        <h1 class="text-5xl text-white font-serif">Floor Guided</h1>
+    </div>
+     <div class="grid md:grid-cols-2 gap-8 px-6 md:px-20 py-10">
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Ground Floor</h2>
+            <p class="text-gray-300">Fashion & Accessories</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">First Floor</h2>
+            <p class="text-gray-300">Electronics & Gadgets</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Second Floor</h2>
+            <p class="text-gray-300">Food Court & Cafes</p>
+        </div>
+
+         <div class="bg-gray-700 shadow-lg rounded-xl p-6 text-center transition hover:scale-105 hover:shadow-2xl">
+            <h2 class="font-bold text-white text-lg mb-2">Third Floor</h2>
+            <p class="text-gray-300">Entertainment Zone</p>
+        </div>
+    </div>
+ </section>
+
+<!-- 🔹 Contact Section -->
+<section id="contact" class="py-16">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+    <p class="text-gray-600">Email: support@citymall.com</p>
+    <p class="text-gray-600">Phone: +91 9876543210</p>
+  </div>
+</section>
+
+<!-- 🔹 Footer -->
+<footer class="bg-black text-white text-center p-4">
+  <p>© 2026 City Mall. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+</body>
+</html>
